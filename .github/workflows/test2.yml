@@ -17,9 +17,9 @@ jobs:
          run: echo Hello, World!
        - name: Execute few commands
          run: |
-             echo: "Execute commands1"
-             echo: "Execute commands2"
-             echo: "Application name: ${{ env.APPLICATION_NAME}}"
+            echo: "Execute commands1"
+            echo: "Execute commands2"
+            echo: "Application name: ${{ env.APPLICATION_NAME }}"
   my_deploy:
       runs-on: ubuntu-latest
       needs: [my_testing1]
@@ -28,6 +28,6 @@ jobs:
         - name: Run a one-line script
           run: echo Hello, World!       
         - name: Printing deployemnt package
-          run: echo "Deploy package name is ${{ env.PACKAGE_NAME}}" 
+          run: echo "Deploy package name is ${{ env.PACKAGE_NAME }}" 
           
      
