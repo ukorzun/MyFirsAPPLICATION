@@ -1,0 +1,23 @@
+name:  MyGitHubAction-Basics
+
+on: 
+ push:
+   branches: 
+     - master
+   
+jobs:
+  my_testing1:
+     runs-on: ubuntu-latest
+    
+     steps:
+       - name: Run a one-line script
+         run: echo Hello, World!
+         
+  my_deploy:
+      runs-on: [self-hosted, linux]
+      
+      
+      steps:
+        - name: Run a one-line script
+          run: echo Hello, World!       
+     
