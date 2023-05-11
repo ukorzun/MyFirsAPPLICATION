@@ -14,7 +14,7 @@ jobs:
          run: echo Hello, World!
          
   my_deploy:
-      runs-on: [self-hosted, linux]
+      runs-on: ubuntu-latest
       
       
       steps:
