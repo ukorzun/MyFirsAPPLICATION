@@ -1,7 +1,7 @@
 name:  MyGitHubAction-Basics
 env:
   APPLICATION_NAME: "MyFlask"
-  PACKAGE_NAME   : "flask-deploy-ver-${{ github.sha }}"
+  PACKAGE_NAME    : "flask-deploy-ver-${{ github.sha }}"
 
 on: 
  push:
@@ -17,8 +17,8 @@ jobs:
          run: echo Hello, World!
        - name: Execute few commands
          run: |
-            echo: "Execute commands1"
-            echo: "Execute commands2"
+            echo: "Hello message1"
+            echo: "Hello message2"
             echo: "Application name: ${{ env.APPLICATION_NAME }}"
   my_deploy:
       runs-on: ubuntu-latest
