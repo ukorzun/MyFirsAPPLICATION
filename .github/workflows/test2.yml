@@ -13,11 +13,6 @@ jobs:
     name: Check changed files
     outputs:
       api_service: ${{ steps.check_files.outputs.api_service }}
-      note_service: ${{ steps.check_files.outputs.note_service }}
-      category_service: ${{ steps.check_files.outputs.category_service }}
-      file_service: ${{ steps.check_files.outputs.file_service }}
-      tag_service: ${{ steps.check_files.outputs.tag_service }}
-      user_service: ${{ steps.check_files.outputs.user_service }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
